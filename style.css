@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: cadetblue;
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    border-bottom: 16px solid darkgray;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+header button {
+    margin-left: 16px;
+    border-radius: 4px;
+}
+
+form {
+    background-color: gainsboro;
+    padding: 24px 0;
+    display: none;
+    text-align: center;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+#cancel-button {
+    background-color: darkred;
+}
+
+#cancel-button:hover {
+    background-color: rgb(93, 2, 2);
+}
+
+button {
+    background-color: darkcyan;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: rgb(1, 93, 93);
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+}
+
+.imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .6s;
+}
+
+.imagem-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.imagem-link a:hover {
+    color: #bbb6b6;
+}
+
+ul li:hover .imagem-link {
+    opacity: 1;
+}
