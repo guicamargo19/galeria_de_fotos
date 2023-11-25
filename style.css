@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color:rgb(197, 237, 238);
+}
+
 header {
     background-color: cadetblue;
     padding: 16px 0;
@@ -60,6 +64,7 @@ button:hover {
 ul {
     display: flex;
     flex-wrap: wrap;
+    padding-right: 4px;
 }
 
 ul li {
@@ -68,6 +73,9 @@ ul li {
     position: relative;
     max-height: 290px;
     overflow-y: hidden;
+    padding-top: 4px;
+    padding-left: 4px;
+    overflow-x: hidden;
 }
 
 ul li img {
