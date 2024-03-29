@@ -6,12 +6,12 @@
 }
 
 body {
-    background-color:rgb(197, 237, 238);
+    background-color:lightgray;
 }
 
 header {
-    background-color: cadetblue;
-    padding: 16px 0;
+    background-color: darkcyan;
+    padding: 24px 0;
     color: #fff;
     display: flex;
     border-bottom: 16px solid darkgray;
@@ -25,7 +25,7 @@ header button {
 }
 
 form {
-    background-color: gainsboro;
+    background-color: lightgray;
     padding: 24px 0;
     display: none;
     text-align: center;
@@ -48,7 +48,7 @@ input, button {
 }
 
 button {
-    background-color: darkcyan;
+    background-color: rgb(25, 26, 79);
     border: none;
     color: #fff;
     border-radius: 4px;
@@ -58,38 +58,45 @@ button {
 }
 
 button:hover {
-    background-color: rgb(1, 93, 93);
+    background-color: darkblue;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 28px;
 }
 
 ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 12px;
 }
 
 ul li {
-    max-width: 25%;
-    list-style: none;
+    width: 100%;
     position: relative;
-    max-height: 290px;
-    overflow-y: hidden;
-    padding-top: 4px;
-    padding-left: 4px;
-    overflow-x: hidden;
+    height: 220px;
+    margin-bottom: 12px;
+    list-style: none;
 }
 
 ul li img {
     height: 100%;
+    width: 100%;
+    border-radius: 6px;
 }
 
 .imagem-link {
-    padding: 16px;
+    padding: 14px;
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     opacity: 0;
+    border-radius: 6px;
     transition: all ease .6s;
 }
 
